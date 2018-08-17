@@ -14,8 +14,8 @@ public class User  extends ParentEntity{
 	
 	private static final long serialVersionUID = 159613586650476168L;
 
-   @Column(name="First_name",nullable=false,length=255)
-	private String  Firstname;
+   @Column(name="first_name",nullable=false,length=255)
+	private String  firstname;
    
    @Column(name="second_name",nullable=true,length=255)
 	private String  secondname;
@@ -33,9 +33,7 @@ public class User  extends ParentEntity{
 	private String  address;
 	
 	
-	public String getFirstname() {
-		return Firstname;
-	}
+	
 	public String getSecondname() {
 		return secondname;
 	}
@@ -51,9 +49,7 @@ public class User  extends ParentEntity{
 	public String getAddress() {
 		return address;
 	}
-	public void setFirstname(String firstname) {
-		Firstname = firstname;
-	}
+
 	public void setSecondname(String secondname) {
 		this.secondname = secondname;
 	}
@@ -68,6 +64,12 @@ public class User  extends ParentEntity{
 	}
 	public void setAddress(String address) {
 		this.address = address;
+	}
+	public String getFirstname() {
+		return firstname;
+	}
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
 	}
 	
 	
