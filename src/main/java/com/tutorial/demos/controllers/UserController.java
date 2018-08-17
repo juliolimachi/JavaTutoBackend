@@ -1,6 +1,7 @@
 package com.tutorial.demos.controllers;
 
 import java.io.IOException;
+import java.util.List;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,7 +47,16 @@ public class UserController {
 	} 
 	
 
-
+	@RequestMapping(value ="/getUsers",method=RequestMethod.GET)
+	public List<User> getUsers() {
+		
+	return	this.userService.findAll();
+		
+	}
+	
+	
+	
+	
 
 	private boolean validate(User user) {
 		
