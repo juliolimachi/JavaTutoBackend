@@ -10,6 +10,10 @@ public interface UserService {
 	 User save(User user);
     //Lista de Usuarios
 	 List<User> findAll();
+	 
+	 
+	 //Eliminar usuario por id
+    	void deleteUser(Long id);
 
 	
 }
